@@ -4,7 +4,27 @@
 
 
 
+#Range and While
+'''
+#While loop (define your increment)
+testNumber = 5;
 
+while testNumber < 10:
+    print(testNumber)
+    testNumber += 1
+
+#Loop through range setting increment
+for x in range(0, 10, 2):
+    print(x)
+   
+#Run a loop through a range
+for x in range(5, 12): 
+    print(x)
+
+#Run a loop 10 times (not releated to a list)
+for x in range(10):
+    print('')
+'''
 
 #For Loops
 '''
