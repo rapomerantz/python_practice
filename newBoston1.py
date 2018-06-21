@@ -1,3 +1,53 @@
+#Variable scope
+'''
+a = 12345
+
+def taco():
+    a = 54321
+    print(a)
+
+def fudge():
+    print(a)
+
+taco()
+fudge()
+'''
+
+#Default values for arguements 
+'''
+def apple_flavor(color = 'unknown'):
+    if color is 'green':
+        taste = 'tart'
+    elif color is 'red':
+        taste = 'sweet'
+    else:
+        taste = 'dunno'
+    return(taste)
+
+print(apple_flavor('green'))
+print(apple_flavor('red'))
+print(apple_flavor('purple'))
+print(apple_flavor())
+'''
+
+#Return values
+#This is an example in the video, forgive me for using it :/
+'''
+def allowed_dating_age(my_age):
+    their_age = (my_age / 2) + 7
+    return their_age
+
+shaynaLimit = allowed_dating_age(32)
+creepyJoeLimit = allowed_dating_age(49)
+
+print('shayna can date boys that are at least: ', shaynaLimit)
+print('creepyJoe can date boys that are at least: ', creepyJoeLimit)
+
+for n in range(18, 65): 
+    result = allowed_dating_age(n)
+    print('age: ',n,'result', result)
+'''
+
 #Functions
 '''
 def bitcoin_to_usd(bitcoin): #<--using an argument
