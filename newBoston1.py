@@ -1,8 +1,60 @@
+#Functions
+'''
+def bitcoin_to_usd(bitcoin): #<--using an argument
+    result = bitcoin * 15000   
+    print(result) 
 
+bitcoin_to_usd(55) #<--call function
+bitcoin_to_usd(1)
 
+def taco():
+    print('in taco function')
+    print('functions are cool')
+taco()
+'''
 
+#Continue
+'''
+numbersTaken = [1, 5, 10, 12, 15, 3]
 
+print('Numbers still available: ')
 
+for n in range(1, 20): 
+    if n in numbersTaken: #<-- check for number in list
+        continue #<-- Skip the number and rest of code and restart the loop
+    print(n)
+'''
+
+# The ol' fizz buzz
+'''
+for n in range(101):
+    if n % 3 is 0 and n % 5 is 0:
+        print(n, 'FizzBuzz')
+    elif n % 3 is 0:
+        print ('Fizz')
+    elif n % 5 is 0: 
+        print('Buzz')
+    else:
+        print('naw')
+'''
+
+#Break
+#Find a magic number!!
+'''
+for n in range(101):
+    if n % 4 is 0:
+        print(n, 'is divisiable by 4')
+        
+
+magicNumber = 26
+
+for n in range(101, 0, -2): 
+    if n is magicNumber:
+        print(n, 'is the magic number!!')
+        break #<-- stops the loop once the magic number is found
+    else: 
+        print(n)
+'''
 
 #Range and While
 '''
