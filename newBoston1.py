@@ -1,3 +1,21 @@
+
+
+
+
+#Key Word Arguements
+'''
+#Pass arguments in in any order you want 
+
+def dumb_sentence(name = 'Atticus', action = 'ate', item = 'tuna'):
+    print(name, action, item)
+
+dumb_sentence()
+dumb_sentence('Sally', 'runs', 'home')
+dumb_sentence(item='apples') #<--identifying the arguments by name when not adding in expected order
+'''
+
+
+
 #Variable scope
 '''
 a = 12345
