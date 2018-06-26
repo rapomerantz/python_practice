@@ -1,6 +1,71 @@
 
 
+#Dictionaries (OBJECTS)
+'''
+classmates = {'tony': 'cool but a little smelly', 'Ronnie': 'plays guitar', 'Emma': 'Sits behind me'}
 
+# print(classmates)
+# print(classmates['Emma'])
+
+#loopin thru it (use .items())
+for k, v in classmates.items():
+    print (k, ':', v)
+'''
+
+#SETS
+'''
+#If you have duplicates it will only print it ONCE
+groceries = {'milk', 'eggs', 'oreos', 'beer', 'duct tape', 'beer'}
+
+print(groceries)
+
+if 'milk' in groceries:
+    print('you already have milk')
+else: 
+    print('Oh yeah you need milk')
+'''
+
+#Unpacking arguments
+'''
+def health_calculator(age, apples_eatten, cigs_smoked): 
+    result = (100-age) + (apples_eatten * 3.5) - (cigs_smoked * 2)
+    print('Health Rating:', result)
+
+Atticus_data = [25, 4, 5]
+
+#Old Way: 
+health_calculator(Atticus_data[0],Atticus_data[1],Atticus_data[2])
+
+#Pass each item in in order: 
+health_calculator(*Atticus_data)
+'''
+
+#Flexible numbers of arguments
+# declare *args and use a loop to address each one
+'''
+def add_numbers(*args): 
+    print ('in add_numbers, Length:', len(args))
+    total = 0
+    for a in args:
+        total += a
+    print(total)
+    return total
+
+print('add Numbers is:', add_numbers(1,2,3,4,5)) 
+
+
+def multiply_numbers (*args): 
+    print ('Length:',len(args))
+    print ('args[0]:',args[0])
+    total = args[0]
+    for a in args[1:]:
+        total = total * a
+    print(total)
+
+multiply_numbers(55, 6, 9, 3, 6, 9, 3, 6, 9, 3, 6, 9, 3, 6, 9, 3, 6, 9, 3, 6, 9, 3, 6, 9)
+
+
+'''
 
 #Key Word Arguements
 '''
