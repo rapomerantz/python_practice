@@ -1,8 +1,49 @@
+#Read and Write Files
+'''
+fw = open('sample.txt', 'w') #<--Create an object file & prepare to write to it
+fw.write('Writing some stuff in my txt file\n')
+fw.write('Heres a new line')
+fw.close() #<-- close it (save memory)
+
+fr = open('sample.txt', 'r') #<--Create an object that opens a file and reads it
+text = fr.read() #<--Assign the value of the object to a variable so it can be used
+print(text)
+testArray = []
+for letter in text:
+    if (letter != ' ' and letter != '\n'):
+        testArray.append(letter)
+print(testArray)
+fr.close()
+'''
+
+#Download an image from the web
+'''
+import random
+import urllib.request
+
+def download_web_image (url):
+    name = random.randrange(1, 1000)
+    full_name = str(name) + '.jpg' #<- convert number to a string and add .jpg file extension
+    urllib.request.urlretrieve(url, full_name)
+
+download_web_image('http://2.bp.blogspot.com/-i9u4Saxb40c/T3FtMZZhg2I/AAAAAAAAA8U/C4QwoWERhUs/s1600/ligers-liger-rare-animals-liger-facts-4-5-2-1-5-6-7-2-3-1-5-3-2-1-7-3-4-2-1.png')
+'''
+
 #Modlues
+'''
+#name file you're importint
+import taco
+import random
 
+#use dot notation to specify import.function()
+taco.what_are_you()
 
+x = random.randrange(1, 1000)
+print(x)
 
-
+y = random.choice([1,2,3,4])
+print(y)
+'''
 
 
 
